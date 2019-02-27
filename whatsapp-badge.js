@@ -1,3 +1,6 @@
+// use for patterns:
+//   *whatsapp.com*
+
 window.fluid.dockBadge = '';
 setTimeout(updateDockBadge, 3000);
 setInterval(updateDockBadge, 15000);
