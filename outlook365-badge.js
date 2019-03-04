@@ -1,5 +1,5 @@
 // use for patterns:
-// *outlook.office.com/mail*
+// *outlook.office365.com/mail*
 
 window.fluid.dockBadge = '';
 setTimeout(updateDockBadge, 3000);
