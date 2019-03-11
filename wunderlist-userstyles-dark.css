@@ -1,3 +1,6 @@
+// use for patterns:
+//   *wunderlist.com*
+
 #wunderlist-base.application-main.background-13:before {
      background-color: #333 !important; 
      background-image: none !important;
@@ -56,15 +59,17 @@ h1.title {
     stroke: rgba(232, 232, 232, 0.35);
 }
 
+.sidebarItem.active a {
+    background-color: #333333 !important;
+}
+
 ul.filters-collection li.active a span.title {
     color: #fff !important;
-    background-color: #888 !important;
     font-weight: 900;
 }
 
 ul.filters-collection li.active a:hover span.title {
     color: #99f !important;
-    background-color: #888 !important;
     font-weight: 900;
 }
 
@@ -98,3 +103,28 @@ span.overdue-count:not(:empty) {
   text-align: center !important;
   font-size: 1em !important;
 }
+
+#detail .inner {
+    background-color: #555555 !important;
+}
+
+#detail .body {
+    background-color: #555555 !important;
+}
+
+#wunderlist-base .comments-bottom {
+    background-color: #555555 !important;
+}
+
+#wunderlist-base .comments-add .input-fake {
+    background: #555555 !important;
+}
+
+#wunderlist-base .last-comment {
+    background: #555555 !important;
+}
+
+#wunderlist-base textarea {
+    background-color: #555555 !important;
+}
+
