@@ -8,7 +8,9 @@ setInterval(updateDockBadge, 15000);
 function updateDockBadge() {
   window.fluid.dockBadge = '';
   var unreadItems = document.getElementsByClassName("p-channel_sidebar__channel--unread").length;
-  if (unreadItems > 0) {
-    window.fluid.dockBadge = unreadItems;
+  var mutedItems = document.getElementsByClassName("p-channel_sidebar__channel--muted").length;
+  unreadItems = unreadItems - mutedItems;
+  if (unreadItems > 0 || mutedItems > 0) {
+    window.fluid.dockBadge = unreadItems + '/' + mutedItems;
   }
 }
